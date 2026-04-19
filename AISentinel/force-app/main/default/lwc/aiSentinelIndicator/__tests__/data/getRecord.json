@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "AI_Sentiment__c": { "value": 15 },
+        "AI_Urgency__c": { "value": "High" },
+        "AI_Summary__c": { "value": "Angry customer needs refund" }
+    }
+}

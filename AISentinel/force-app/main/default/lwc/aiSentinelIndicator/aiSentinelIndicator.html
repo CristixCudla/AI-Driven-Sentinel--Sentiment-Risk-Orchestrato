@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="AI Sentinel Insights" icon-name="standard:bot">
+        <div class="slds-var-m-around_medium">
+            <template if:true={isDataAvailable}>
+                <div class="slds-var-m-bottom_small">
+                    <p class="slds-text-title_caps slds-var-m-bottom_xx-small">AI Summary</p>
+                    <p class="slds-text-body_regular slds-var-p-around_x-small slds-box slds-box_xx-small slds-theme_shade">
+                        {summary}
+                    </p>
+                </div>
+
+                <p class="slds-var-m-bottom_small">
+                    Urgency: <span class={urgencyClass}>{urgency}</span>
+                </p>
+
+                <div>
+                    <div class="slds-grid slds-grid_align-spread">
+                        <span>Sentiment Score</span>
+                        <span>{sentiment}%</span>
+                    </div>
+                    <lightning-progress-bar 
+                        value={sentiment} 
+                        size="large" 
+                        variant={barVariant}>
+                    </lightning-progress-bar>
+                    <p class="slds-text-body_small slds-var-m-top_xx-small slds-text-align_center">
+                        {sentimentLabel}
+                    </p>
+                </div>
+            </template>
+            
+            <template if:false={isDataAvailable}>
+                <p>Waiting for AI analysis...</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
