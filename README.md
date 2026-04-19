@@ -61,11 +61,13 @@ Add https://api.openai.com to Remote Site Settings.
 
 Store the OpenAI API Key in a Named Credential or Custom Label (currently configured in AISentinelService.cls for demo purposes).
 
+
 👨‍💻 Author & Project Status
-This project was architected and developed from scratch by Cristi Cudla.
 
-Status: ✅ Fully Functional
+  This project was architected and developed from scratch by Cristi Cudla.
 
-Version: 1.0 (Production Ready)
+  Status: ✅ Fully Functional
+
+  Version: 1.0 (Production Ready)
 
 Core Competencies: Full-stack Salesforce Development, AI Integration, UI/UX Design with SLDS.
